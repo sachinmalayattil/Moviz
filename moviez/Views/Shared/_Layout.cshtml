@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mobiz</title>
+    @Styles.Render("~/Content/css")    
+    @Scripts.Render("~/bundles/js")
+    <link rel="icon" href="~/Content/Images/title.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="~/Content/Images/logo.png" alt="Homepage">
+            </a>
+        </div>
+    </header>
+    <section class="section-home">
+        @RenderBody()
+        </section>
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - SachinmalayattiL</p>
+        </footer>
+
+        @RenderSection("scripts", required: false)  
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
+
+    <div class="home-content">
+        <div class="row home-content__main">
+            <h3>Welcome to Mowiz</h3>
+
+            <h1>
+                We provide a creative<br>
+                space for people <br>
+                who creates <br>
+                influential personalities.
+            </h1>
+            
+            <div class="home-content__buttons">
+                <button class="smoothscroll btn btn--stroke " onclick="showSignupDiv()">Signup</button>
+                <button class="smoothscroll btn btn--stroke " onclick="showLoginDiv()">Login</button>
+            </div>
+
+        </div>
+        <div class="home-content__line"></div>
+
+    </div>
+    <!-- Signup space-->
+    <div id="signUpContent" class="signup-content__overlay" style="display:none">
+            <div class="signup-content__main">
+                <h3 class="h2">Sign Up for an account</h3>
+
+                <form name="signupform" id="signUpForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+
+                        <div class="form-field">
+                            <input name="Name" type="text" id="Name" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactNumber" type="text" id="contactNumber" placeholder="Phonenumber" required="" value="" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="Password" type="password" id="pswd" placeholder="Password" required="" value="" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="Password2" type="password" id="pswd2" placeholder="Retype Password" required="" value="" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <button class="btn--primary">Sign Up</button>
+                            <div class="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    <!-- end of Signup space-->
+    <!-- Login space-->
+  <div id="loginContent" class="login-content__overlay" style="display:none;">
+    <div class="login-content__main">
+        <h3 class="h2">Login Here!</h3>
+
+        <form name="loginForm" id="loginForm" method="post" action="" novalidate="novalidate">
+            <fieldset>
+                <div class="form-field">
+                    <input name="username" type="email" id="userName" placeholder="Email/Username" value="" required="" aria-required="true" class="full-width">
+                </div>
+                <div class="form-field">
+                    <input name="Password" type="password" id="loginPaswd" placeholder="Password" required="" value="" class="full-width">
+                </div>
+                <div class="form-field">
+                    <button class="btn--primary">Login</button>
+                    <div class="submit-loader">
+                        <div class="text-loader">Sending...</div>
+                        <div class="s-loader">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</div><!-- end of login space-->
+
+   
